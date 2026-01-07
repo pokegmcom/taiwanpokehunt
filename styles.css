@@ -85,6 +85,66 @@ body {
     color: var(--primary-color);
 }
 
+/* 語言選擇器樣式 */
+.language-selector {
+    position: relative;
+    display: inline-block;
+}
+
+.language-selector button {
+    background: none;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.language-selector button:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow-lg);
+    border-radius: 12px;
+    overflow: hidden;
+    z-index: 1000;
+    min-width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.language-selector.active .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: var(--dark-color);
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
 .navbar-toggle {
     display: none;
     background: none;
@@ -549,12 +609,25 @@ body {
     flex-wrap: wrap;
     gap: 0.2rem 1rem;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 
 .friend-links span {
     color: rgba(255, 255, 255, 0.8);
     font-size: 0.9rem;
     margin-right: 0.5rem;
+}
+
+.friend-links a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.friend-links a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 .footer-contact {
