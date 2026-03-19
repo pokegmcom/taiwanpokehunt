@@ -3,375 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>《像素精靈》官網下載 - 復古像素怪物收集養成遊戲 | PokeHunt</title>
-    <meta name="description" content="像素精靈(PokeHunt) - 使用復古像素畫風的經典怪物收集養成遊戲！一款致敬經典的回合制RPG遊戲，玩家將扮演怪物訓練師，在開放世界中探索未知，收服數百種獨特怪物，打造專屬戰隊，並與道館領袖和傳奇訓練師展開精彩對決，重溫童年熱血回憶！">
-    <meta name="keywords" content="像素精靈, PokeHunt, 復古像素, 怪物收集, 養成遊戲, 開放世界, 道館, 策略遊戲, 遊戲攻略, 像素精靈官方網站">
-    <meta name="author" content="Pokegm">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="像素精靈 - 官方網站">
-    <meta property="og:description" content="像素精靈(PokeHunt) - 使用復古像素畫風的經典怪物收集養成遊戲！一款致敬經典的回合制RPG遊戲，玩家將扮演怪物訓練師，在開放世界中探索未知，收服數百種獨特怪物，打造專屬戰隊，並與道館領袖和傳奇訓練師展開精彩對決，重溫童年熱血回憶！">
-    <meta property="og:image" content="logo.png">
-    <meta property="og:url" content="https://www.pokegm.com">
-    <meta property="og:type" content="website">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="logo.png" type="image/png">
+    <title>像素精靈PokeHunt - 官方網站 | 像素風格冒險遊戲</title>
+    <meta name="description" content="像素精靈PokeHunt是一款全新的像素風格冒險遊戲，擁有創新的戰鬥系統、精美的像素畫風和龐大的遊戲世界，讓您體驗獨特的遊戲玩法和精彩的故事劇情。">
+    <meta name="keywords" content="像素精靈PokeHunt, 像素精靈, 像素風格遊戲, 冒險遊戲, 角色扮演遊戲, RPG, 像素遊戲, 遊戲下載, 遊戲攻略, 兌換碼">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
-<body>
-    <!-- 導航欄 -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-brand">
-            <img src="logo.png" alt="像素精靈 標誌" class="logo">
-            <h1>像素精靈<span style="font-size: 0.8rem; color: var(--primary-color); margin-left: 0.5rem;">[官方網站]</span></h1>
-        </div>
-            <ul class="navbar-menu">
-                <li><a href="#home">首頁</a></li>
-                <li><a href="#about">遊戲介紹</a></li>
-                <li><a href="#guide">遊戲攻略</a></li>
-                <li><a href="#download">立即下載</a></li>
-
-            </ul>
-            <div class="language-selector">
-                <button onclick="toggleLanguageDropdown()">
-                    <span>繁體中文(台灣)</span>
-                    <span>▼</span>
-                </button>
-                <div class="dropdown-content">
-                    <a href="https://game.pokegm.com">簡體中文</a>
-                    <a href="https://taiwan.pokegm.com">繁體中文(台灣)</a>
-                    <a href="https://hongkong.pokegm.com">繁體中文(香港)</a>
-                    <a href="https://macau.pokegm.com">繁體中文(澳門)</a>
-                    <a href="https://korea.pokegm.com">한국어</a>
-                    <a href="https://singapore.pokegm.com">English</a>
-                    <a href="https://malaysia.pokegm.com">Malay</a>
-                    <a href="https://vietnam.pokegm.com">Tiếng Việt</a>
-                </div>
+<body class="bg-light text-dark">
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo.png" alt="像素精靈PokeHunt" class="h-10">
+                <h1 class="ml-3 text-xl font-bold text-primary">像素精靈PokeHunt</h1>
             </div>
-            <button class="navbar-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="font-medium text-primary">首頁</a>
+                <a href="features.html" class="font-medium hover:text-primary">遊戲特色</a>
+                <a href="guides.html" class="font-medium hover:text-primary">遊戲攻略</a>
+                <a href="codes.html" class="font-medium hover:text-primary">兌換碼</a>
+                <a href="articles.html" class="font-medium hover:text-primary">文章專區</a>
+                <a href="https://discord.gg/Pvkxz96V" class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30">加入Discord</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-dark focus:outline-none">
+                    <i class="fa fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="index.html" class="font-medium text-primary">首頁</a>
+                <a href="features.html" class="font-medium hover:text-primary">遊戲特色</a>
+                <a href="guides.html" class="font-medium hover:text-primary">遊戲攻略</a>
+                <a href="codes.html" class="font-medium hover:text-primary">兌換碼</a>
+                <a href="articles.html" class="font-medium hover:text-primary">文章專區</a>
+                <a href="https://discord.gg/Pvkxz96V" class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30 text-center">加入Discord</a>
+            </div>
         </div>
     </nav>
 
-    <!-- 主橫幅 (首頁部分) -->
-    <section id="home" class="hero">
-        <div class="slideshow-container">
-            <div class="slide fade">
-                <div class="slide-content">
-                    <h2>像素精靈 - 復古像素怪物收集養成遊戲!</h2>
-                    <p>致敬經典怪物遊戲的回合制RPG遊戲，以復古像素畫風重現記憶中的魅力！</p>
-                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="btn btn-primary">立即下載</a>
-                </div>
-            </div>
-            <div class="slide fade">
-                <div class="slide-content">
-                    <h2>開放世界探索與怪物收集!</h2>
-                    <p>在廣闊的開放世界中探索未知區域，收服數百種獨特怪物！</p>
-                    <a href="#download" class="btn btn-primary">立即下載</a>
-                </div>
-            </div>
-            <div class="slide fade">
-                <div class="slide-content">
-                    <h2>挑戰道館領袖與傳奇訓練師!</h2>
-                    <p>組建專屬戰隊，與道館領袖和傳奇訓練師展開精彩對決！</p>
-                    <a href="#guide" class="btn btn-primary">查看攻略</a>
-                </div>
-            </div>
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!-- Hero区域 -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="1.jpg" alt="像素精靈PokeHunt" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/70 to-dark/90"></div>
         </div>
-        <!-- The dots/circles -->
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">像素精靈PokeHunt</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">探索充滿驚奇的像素世界，體驗獨特的冒險之旅</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="features.html" class="btn-hover bg-primary text-white px-6 py-3 rounded-lg border border-primary/30">了解遊戲特色</a>
+                <a href="codes.html" class="btn-hover bg-accent text-dark px-6 py-3 rounded-lg border border-accent/30">領取兌換碼</a>
+            </div>
         </div>
     </section>
 
-    <!-- 立即下載部分 -->
-    <section id="download" class="download">
-        <div class="container">
-            <h2 class="section-title">立即下载</h2>
-            <div class="download-content">
-                <div class="download-info">
-                    <p>像素精靈已經推出！立即下載，進入復古像素怪物收集養成遊戲的世界！</p>
-                    <p>支援平台: Android、蘋果、PC、鴻蒙</p>
-
+    <!-- 内容区域 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">遊戲亮點</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fa fa-gamepad"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">獨特遊戲玩法</h3>
+                    <p class="text-gray-600">創新的戰鬥系統和探索機制，讓你體驗不一樣的遊戲樂趣。</p>
                 </div>
-                <div class="download-buttons">
-                    <a href="https://hk.qu06.cn/pokehunt/?xamro7z8" class="btn btn-primary btn-large">立即下載手機版</a>
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fa fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">精美像素畫風</h3>
+                    <p class="text-gray-600">精心設計的像素美術風格，帶你回到經典遊戲的懷舊時光。</p>
+                </div>
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">社交互動</h3>
+                    <p class="text-gray-600">與好友一起冒險，組隊挑戰強大的敵人，共同成長。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 遊戲介紹部分 -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">遊戲介紹</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>像素精靈是一款使用復古像素畫風的經典怪物收集養成遊戲。作為致敬經典怪物遊戲的回合制RPG遊戲，在重現經典怪物遊戲魅力的同時，加入了全新的開放世界探索元素。</p>
-                    <p>玩家將扮演怪物訓練師，在開放世界中探索未知區域，收服數百種獨特怪物，組建專屬戰隊。與道館領袖和傳奇訓練師展開精彩對決，重溫童年熱血回憶！</p>
-                </div>
-                <div class="about-features">
-                    <div class="feature">
-                        <h3>復古像素畫風</h3>
-                        <p>以喚起童年回憶的復古風格圖像，重現經典怪物遊戲的魅力</p>
-                    </div>
-                    <div class="feature">
-                        <h3>數百種怪物</h3>
-                        <p>收服並收集各種類型的獨特怪物，組建專屬戰隊</p>
-                    </div>
-                    <div class="feature">
-                        <h3>回合制策略戰鬥</h3>
-                        <p>策略性地組建隊伍，與道館領袖和傳奇訓練師展開精彩對決</p>
-                    </div>
-                    <div class="feature">
-                        <h3>開放世界探索</h3>
-                        <p>在廣闊的開放世界中探索未知區域，尋找隱藏的怪物</p>
-                    </div>
-                </div>
+    <!-- 最新文章 -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold">最新文章</h2>
+                <a href="articles.html" class="text-primary hover:underline">查看全部</a>
             </div>
-            <!-- 遊戲特色圖片幻燈片 -->
-            <div class="about-slider">
-                <div class="slider-container">
-                    <div class="slider-slide fade">
-                        <img src="1.jpg" alt="遊戲特色圖片1" class="slider-image">
-                    </div>
-                    <div class="slider-slide fade">
-                        <img src="2.jpg" alt="遊戲特色圖片2" class="slider-image">
-                    </div>
-                    <div class="slider-slide fade">
-                        <img src="3.jpg" alt="遊戲特色圖片3" class="slider-image">
-                    </div>
-                    <div class="slider-slide fade">
-                        <img src="4.jpg" alt="遊戲特色圖片4" class="slider-image">
-                    </div>
-                    <div class="slider-slide fade">
-                        <img src="5.jpg" alt="遊戲特色圖片5" class="slider-image">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
+                    <img src="2.jpg" alt="遊戲更新" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">遊戲最新版本更新公告</h3>
+                        <p class="text-gray-600 mb-4">2026-03-15</p>
+                        <p class="text-gray-700 mb-4">本次更新帶來了全新的職業和地圖，以及多項遊戲平衡調整。</p>
+                        <a href="articles/article1.html" class="text-primary hover:underline">閱讀更多</a>
                     </div>
                 </div>
-                <!-- 控制按鈕 -->
-                <a class="slider-prev" onclick="plusFeatureSlides(-1)">&lt;</a>
-                <a class="slider-next" onclick="plusFeatureSlides(1)">&gt;</a>
-                <!-- 指示器 -->
-                <div class="slider-dots">
-                    <span class="slider-dot" onclick="currentFeatureSlide(1)"></span>
-                    <span class="slider-dot" onclick="currentFeatureSlide(2)"></span>
-                    <span class="slider-dot" onclick="currentFeatureSlide(3)"></span>
-                    <span class="slider-dot" onclick="currentFeatureSlide(4)"></span>
-                    <span class="slider-dot" onclick="currentFeatureSlide(5)"></span>
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
+                    <img src="3.jpg" alt="遊戲攻略" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">新手入門指南</h3>
+                        <p class="text-gray-600 mb-4">2026-03-10</p>
+                        <p class="text-gray-700 mb-4">為新手玩家提供全面的遊戲入門指導，幫助你快速上手。</p>
+                        <a href="articles/article1.html" class="text-primary hover:underline">閱讀更多</a>
+                    </div>
+                </div>
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
+                    <img src="4.jpg" alt="活動公告" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">春季活動即將開啟</h3>
+                        <p class="text-gray-600 mb-4">2026-03-05</p>
+                        <p class="text-gray-700 mb-4">春季限定活動即將開始，參與活動獲取豐富獎勵。</p>
+                        <a href="articles/article1.html" class="text-primary hover:underline">閱讀更多</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 文章公告部分 -->
-    <section id="article" class="article">
-        <div class="container">
-            <div class="article-content">
-                <h2 class="section-title">游戏上线公告</h2>
-                <div class="article-text">
-                    <p>親愛的訓練家們:</p>
-                    <p>《PokeHunt》於2026年1月20日上午10點正式上線!經典寵物小精靈，細緻還原數百種精靈的原生姿態與冒險核心！在遊戲中您可以體驗到:</p>
-                    <ul>
-                        <li>【還原內容】百分百還原經典精靈風貌，匯聚各方夥伴！</li>
-                        <li>【精靈形態】MEGA進化、巨大化，解放精靈全部形態！</li>
-                        <li>【祕寶增益】羈絆飾品，激活精靈潛藏實力！</li>
-                        <li>【探索冒險】開放式地圖關卡，發掘隱藏秘境！</li>
-                        <li>【競技對決】單人對決較量實力，爭奪巔峰排名！</li>
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">像素精靈PokeHunt</h3>
+                    <p class="text-gray-400">探索充滿驚奇的像素世界，體驗獨特的冒險之旅。</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">快速鏈接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">首頁</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white">遊戲特色</a></li>
+                        <li><a href="guides.html" class="text-gray-400 hover:text-white">遊戲攻略</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white">兌換碼</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white">文章專區</a></li>
                     </ul>
-                    <p class="gift-title">禮包碼：【開服福利】</p>
-                    <div class="gift-codes">
-                        <div class="gift-item">
-                            <div class="gift-number">禮包碼1</div>
-                            <div class="gift-code">ay6btcrx</div>
-                            <div class="gift-reward">水晶*50、金幣*1w</div>
-                        </div>
-                        <div class="gift-item">
-                            <div class="gift-number">禮包碼2</div>
-                            <div class="gift-code">d7lsw8bu</div>
-                            <div class="gift-reward">神奇糖果（中）*5、金幣*1w</div>
-                        </div>
-                        <div class="gift-item">
-                            <div class="gift-number">禮包碼3</div>
-                            <div class="gift-code">1frydl8n</div>
-                            <div class="gift-reward">體力*50、疲勞值*100</div>
-                        </div>
-                        <div class="gift-item">
-                            <div class="gift-number">禮包碼4</div>
-                            <div class="gift-code">42binn3h</div>
-                            <div class="gift-reward">普通卡牌隨機禮包*10、神奇糖果（中）*5</div>
-                        </div>
-                        <div class="gift-item">
-                            <div class="gift-number">禮包碼5</div>
-                            <div class="gift-code">y67gaamk</div>
-                            <div class="gift-reward">水晶*100、金幣*1w</div>
-                        </div>
-                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">聯絡我們</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-weixin mr-2"></i>
+                            <span>小茂愛手游</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-qq mr-2"></i>
+                            <span>QQ群：1054734634</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-discord mr-2"></i>
+                            <a href="https://discord.gg/Pvkxz96V" class="hover:underline">Discord社區</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">加入QQ群</h3>
+                    <img src="https://dh.nnii.cn/qqqun.jpg" alt="QQ群二維碼" class="w-32 h-32">
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- 遊戲指南部分 -->
-    <section id="guide" class="guide">
-        <div class="container">
-            <h2 class="section-title">遊戲攻略</h2>
-            <div class="guide-content">
-                <div class="guide-item">
-                    <h3>初學者指南</h3>
-                    <div class="guide-steps">
-                        <div class="step">
-                            <h4>1. 立即下載</h4>
-                            <p>立即下載遊戲。下載完成後即可開始遊戲體驗。</p>
-                        </div>
-                        <div class="step">
-                            <h4>2. 尋找第一隻怪物</h4>
-                            <p>在開放世界中開始探索，在不同區域尋找怪物。觸摸畫面中出現的怪物進行收服。</p>
-                        </div>
-                        <div class="step">
-                            <h4>3. 培養怪物</h4>
-                            <p>給收服的怪物餵食並累積經驗值使其進化。培養強大的怪物吧。</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="guide-item">
-                    <h3>高級策略</h3>
-                    <div class="guide-tips">
-                    <div class="tip">
-                        <h4>屬性相剋運用</h4>
-                        <p>每隻怪物對不同屬性都有優勢和劣勢。在回合制戰鬥中適當運用相剋關係獲勝。</p>
-                    </div>
-                    <div class="tip">
-                        <h4>技能組合</h4>
-                        <p>適當組合怪物的技能造成更大傷害。注意特殊技能的冷卻時間。</p>
-                    </div>
-                    <div class="tip">
-                        <h4>隊伍組建</h4>
-                        <p>使用多種類型的怪物組建專屬隊伍。準備適合與道館領袖和傳奇訓練師對戰的隊伍。</p>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 頁腳 -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="friend-links">
-                    <span>友情鏈接: </span>
-                    <a href="https://game.pokegm.com">像素精灵</a>
-                    <a href="https://taiwan.pokegm.com">像素精靈</a>
-                    <a href="https://hongkong.pokegm.com">像素精靈</a>
-                    <a href="https://macau.pokegm.com">像素精灵</a>
-                    <a href="https://korea.pokegm.com">픽셀精灵</a>
-                    <a href="https://singapore.pokegm.com">Pixel Sprite</a>
-                    <a href="https://malaysia.pokegm.com">Pixsel Sprite</a>
-                    <a href="https://vietnam.pokegm.com">Tinh linh pixsel</a>
-                </div>
-                <div class="footer-contact">
-                    <p>如有遊戲相關問題或建議，請透過電子郵件聯絡我們：<a href="mailto:game@pokegm.com" style="color: rgba(255,255,255,0.9); text-decoration: underline;">game@pokegm.com</a></p>
-                </div>
-                <p>&copy; 2026 Pokehunt. All rights reserved.</p>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2026 像素精靈PokeHunt 官方網站. 保留所有權利.</p>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script>
-        // 頂部主輪播
-        let slideIndex = 1;
-        showHeroSlides(slideIndex);
-
-        function plusSlides(n) {
-            showHeroSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showHeroSlides(slideIndex = n);
-        }
-
-        // 頂部主輪播控制
-        function showHeroSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";
-            dots[slideIndex-1].className += " active";
-        }
-        
-        // 遊戲特色輪播控制
-        let featureSlideIndex = 1;
-        showFeatureSlides(featureSlideIndex);
-        
-        function plusFeatureSlides(n) {
-            showFeatureSlides(featureSlideIndex += n);
-        }
-        
-        function currentFeatureSlide(n) {
-            showFeatureSlides(featureSlideIndex = n);
-        }
-        
-        function showFeatureSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slider-slide");
-            let dots = document.getElementsByClassName("slider-dot");
-            if (n > slides.length) {featureSlideIndex = 1}
-            if (n < 1) {featureSlideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[featureSlideIndex-1].style.display = "block";
-            dots[featureSlideIndex-1].className += " active";
-        }
-
-        // 自動輪播
-        // 頂部主輪播自動切換
-        setInterval(() => {
-            plusSlides(1);
-        }, 5000);
-        
-        // 遊戲特色輪播自動切換
-        setInterval(() => {
-            plusFeatureSlides(1);
-        }, 4000);
-
-        // 手機菜單切換
-        const navbarToggle = document.querySelector('.navbar-toggle');
-        const navbarMenu = document.querySelector('.navbar-menu');
-
-        navbarToggle.addEventListener('click', () => {
-            navbarMenu.classList.toggle('active');
-        });
-
-        // 語言選擇器下拉菜單
-        function toggleLanguageDropdown() {
-            document.querySelector('.language-selector').classList.toggle('active');
-        }
-
-        // 點擊頁面其他地方關閉語言選擇器
-        window.addEventListener('click', function(event) {
-            if (!event.target.closest('.language-selector')) {
-                document.querySelector('.language-selector').classList.remove('active');
-            }
+        // 移动端菜单切换
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
         });
     </script>
 </body>

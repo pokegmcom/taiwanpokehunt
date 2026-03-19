@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>兌換碼 - 像素精靈PokeHunt | 最新禮包碼與遊戲獎勵</title>
+    <meta name="description" content="像素精靈PokeHunt最新兌換碼，領取豐富遊戲獎勵，包含鑽石、裝備、道具等多種獎勵，定期更新有效兌換碼。">
+    <meta name="keywords" content="像素精靈PokeHunt, 像素精靈, 兌換碼, 禮包碼, 遊戲獎勵, 鑽石, 裝備, 道具, 最新兌換碼, 有效兌換碼">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo.png" alt="像素精靈PokeHunt" class="h-10">
+                <h1 class="ml-3 text-xl font-bold text-primary">像素精靈PokeHunt</h1>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="font-medium hover:text-primary">首頁</a>
+                <a href="features.html" class="font-medium hover:text-primary">遊戲特色</a>
+                <a href="guides.html" class="font-medium hover:text-primary">遊戲攻略</a>
+                <a href="codes.html" class="font-medium text-primary">兌換碼</a>
+                <a href="articles.html" class="font-medium hover:text-primary">文章專區</a>
+                <a href="https://discord.gg/Pvkxz96V" class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30">加入Discord</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-dark focus:outline-none">
+                    <i class="fa fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="index.html" class="font-medium hover:text-primary">首頁</a>
+                <a href="features.html" class="font-medium hover:text-primary">遊戲特色</a>
+                <a href="guides.html" class="font-medium hover:text-primary">遊戲攻略</a>
+                <a href="codes.html" class="font-medium text-primary">兌換碼</a>
+                <a href="articles.html" class="font-medium hover:text-primary">文章專區</a>
+                <a href="https://discord.gg/Pvkxz96V" class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30 text-center">加入Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section class="relative h-96 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="4.jpg" alt="兌換碼" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/70 to-dark/90"></div>
+        </div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">兌換碼</h1>
+            <p class="text-xl md:text-2xl mb-6 max-w-2xl mx-auto">領取豐富遊戲獎勵，提升遊戲體驗</p>
+        </div>
+    </section>
+
+    <!-- 兑换码内容 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- 左侧兑换码列表 -->
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-bold mb-8 text-center">最新兌換碼</h2>
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl shadow-md p-6">
+                            <h3 class="text-2xl font-bold mb-6 text-primary">通用礼包码</h3>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full">
+                                    <thead>
+                                        <tr class="border-b border-gray-200">
+                                            <th class="py-3 px-4 text-left">礼包名称</th>
+                                            <th class="py-3 px-4 text-left">礼包码</th>
+                                            <th class="py-3 px-4 text-left">内容</th>
+                                            <th class="py-3 px-4 text-left">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-b border-gray-200">
+                                            <td class="py-3 px-4">尊享礼包2</td>
+                                            <td class="py-3 px-4">y67gaamk</td>
+                                            <td class="py-3 px-4">闪光皮卡丘*1, 扭蛋币*15</td>
+                                            <td class="py-3 px-4"><button class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30" onclick="copyCode('y67gaamk')">複製兌換碼</button></td>
+                                        </tr>
+                                        <tr class="border-b border-gray-200">
+                                            <td class="py-3 px-4">新手礼包</td>
+                                            <td class="py-3 px-4">ay6btcrx</td>
+                                            <td class="py-3 px-4">水晶*300, 高级球*5, 体力饮料*5</td>
+                                            <td class="py-3 px-4"><button class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30" onclick="copyCode('ay6btcrx')">複製兌換碼</button></td>
+                                        </tr>
+                                        <tr class="border-b border-gray-200">
+                                            <td class="py-3 px-4">进阶礼包</td>
+                                            <td class="py-3 px-4">d7lsw8bu</td>
+                                            <td class="py-3 px-4">神奇糖果（中）*50, 友好币*100</td>
+                                            <td class="py-3 px-4"><button class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30" onclick="copyCode('d7lsw8bu')">複製兌換碼</button></td>
+                                        </tr>
+                                        <tr class="border-b border-gray-200">
+                                            <td class="py-3 px-4">成长礼包</td>
+                                            <td class="py-3 px-4">1frydl8n</td>
+                                            <td class="py-3 px-4">体力饮料*4, 疲劳值*100, 相遇碰碰*5</td>
+                                            <td class="py-3 px-4"><button class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30" onclick="copyCode('1frydl8n')">複製兌換碼</button></td>
+                                        </tr>
+                                        <tr class="border-b border-gray-200">
+                                            <td class="py-3 px-4">冠军礼包</td>
+                                            <td class="py-3 px-4">42binn3h</td>
+                                            <td class="py-3 px-4">神奇糖果（中）*50, 普通卡牌随机礼包*20</td>
+                                            <td class="py-3 px-4"><button class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30" onclick="copyCode('42binn3h')">複製兌換碼</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="mt-6 p-4 bg-gray-100 rounded-lg">
+                                <p class="font-semibold">礼包使用方式：</p>
+                                <p>主界面左上角-角色头像-礼包-兑换</p>
+                                <p class="mt-2 font-semibold">礼包使用条件/等级：</p>
+                                <p>单角色只可使用一次/创建完角色</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white rounded-2xl shadow-md p-6">
+                            <h3 class="text-2xl font-bold mb-6 text-primary">一码一用礼包码</h3>
+                            <div class="overflow-x-auto">
+                                <table class="min-w-full">
+                                    <thead>
+                                        <tr class="border-b border-gray-200">
+                                            <th class="py-3 px-4 text-left">礼包名称</th>
+                                            <th class="py-3 px-4 text-left">内容</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-b border-gray-200">
+                                            <td class="py-3 px-4">豪华礼包</td>
+                                            <td class="py-3 px-4">水晶*1000, 友好币*100</td>
+                                        </tr>
+                                        <tr class="border-b border-gray-200">
+                                            <td class="py-3 px-4">抓宠礼包</td>
+                                            <td class="py-3 px-4">稀有卡牌礼包*10, 金币*100000, 特性石*20</td>
+                                        </tr>
+                                        <tr class="border-b border-gray-200">
+                                            <td class="py-3 px-4">尊享礼包1</td>
+                                            <td class="py-3 px-4">进阶石*5, 闪光小精灵自选*1, 神奇胶囊*10</td>
+                                        </tr>
+                                        <tr class="border-b border-gray-200">
+                                            <td class="py-3 px-4">尊享礼包3</td>
+                                            <td class="py-3 px-4">神奇糖果（中）*50, 金币*100000, 神奇糖果（大）*30</td>
+                                        </tr>
+                                        <tr class="border-b border-gray-200">
+                                            <td class="py-3 px-4">开服礼包</td>
+                                            <td class="py-3 px-4">体力饮料*4, 扭蛋币*15</td>
+                                        </tr>
+                                        <tr class="border-b border-gray-200">
+                                            <td class="py-3 px-4">双月卡尊享</td>
+                                            <td class="py-3 px-4">闪光巴大蝶*1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="mt-6 p-4 bg-gray-100 rounded-lg">
+                                <p class="font-semibold">双月卡尊享使用条件：</p>
+                                <p>玩家同时购买了水晶月卡和特权月卡后发放</p>
+                                <p class="mt-2 font-semibold">礼包使用方式：</p>
+                                <p>主界面左上角-角色头像-礼包-兑换</p>
+                                <p class="mt-2 font-semibold">礼包使用条件/等级：</p>
+                                <p>单角色只可使用一次/创建完角色</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右侧兑换流程 -->
+                <div class="lg:col-span-1">
+                    <div class="card-hover bg-white rounded-2xl shadow-md p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-primary">兌換流程</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">1</div>
+                                <div>
+                                    <p class="text-gray-700">打開遊戲，進入主界面</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">2</div>
+                                <div>
+                                    <p class="text-gray-700">點擊右上角的「設置」按鈕</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">3</div>
+                                <div>
+                                    <p class="text-gray-700">選擇「兌換碼」選項</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">4</div>
+                                <div>
+                                    <p class="text-gray-700">輸入兌換碼，點擊「兌換」按鈕</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4 flex-shrink-0">5</div>
+                                <div>
+                                    <p class="text-gray-700">兌換成功後，獎勵將發放到郵箱中</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h3 class="text-xl font-semibold mb-4 text-primary">溫馨提示</h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <i class="fa fa-info-circle text-primary mt-1 mr-2"></i>
+                                    <span>每個兌換碼只能使用一次</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-info-circle text-primary mt-1 mr-2"></i>
+                                    <span>兌換碼有有效期，請及時使用</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fa fa-info-circle text-primary mt-1 mr-2"></i>
+                                    <span>如有兌換問題，請聯繫客服</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">像素精靈PokeHunt</h3>
+                    <p class="text-gray-400">探索充滿驚奇的像素世界，體驗獨特的冒險之旅。</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">快速鏈接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">首頁</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white">遊戲特色</a></li>
+                        <li><a href="guides.html" class="text-gray-400 hover:text-white">遊戲攻略</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white">兌換碼</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white">文章專區</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">聯絡我們</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-weixin mr-2"></i>
+                            <span>小茂愛手游</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-qq mr-2"></i>
+                            <span>QQ群：1054734634</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-discord mr-2"></i>
+                            <a href="https://discord.gg/Pvkxz96V" class="hover:underline">Discord社區</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">加入QQ群</h3>
+                    <img src="https://dh.nnii.cn/qqqun.jpg" alt="QQ群二維碼" class="w-32 h-32">
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2026 像素精靈PokeHunt 官方網站. 保留所有權利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // 复制兑换码功能
+        function copyCode(code) {
+            navigator.clipboard.writeText(code).then(function() {
+                alert('兌換碼已複製到剪貼板');
+            }, function() {
+                alert('複製失敗，請手動複製');
+            });
+        }
+    </script>
+</body>
+</html>

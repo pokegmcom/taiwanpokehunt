@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲特色 - 像素精靈PokeHunt | 創新玩法與精美畫風</title>
+    <meta name="description" content="像素精靈PokeHunt的獨特遊戲特色，包括創新戰鬥系統、精美像素畫風、龐大遊戲世界和社交互動等多種精彩遊戲體驗。">
+    <meta name="keywords" content="像素精靈PokeHunt, 像素精靈, 遊戲特色, 像素風格, 創新玩法, 社交互動, 遊戲系統, 戰鬥系統, 龐大遊戲世界">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="logo.png" alt="像素精靈PokeHunt" class="h-10">
+                <h1 class="ml-3 text-xl font-bold text-primary">像素精靈PokeHunt</h1>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="index.html" class="font-medium hover:text-primary">首頁</a>
+                <a href="features.html" class="font-medium text-primary">遊戲特色</a>
+                <a href="guides.html" class="font-medium hover:text-primary">遊戲攻略</a>
+                <a href="codes.html" class="font-medium hover:text-primary">兌換碼</a>
+                <a href="articles.html" class="font-medium hover:text-primary">文章專區</a>
+                <a href="https://discord.gg/Pvkxz96V" class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30">加入Discord</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-dark focus:outline-none">
+                    <i class="fa fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="index.html" class="font-medium hover:text-primary">首頁</a>
+                <a href="features.html" class="font-medium text-primary">遊戲特色</a>
+                <a href="guides.html" class="font-medium hover:text-primary">遊戲攻略</a>
+                <a href="codes.html" class="font-medium hover:text-primary">兌換碼</a>
+                <a href="articles.html" class="font-medium hover:text-primary">文章專區</a>
+                <a href="https://discord.gg/Pvkxz96V" class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30 text-center">加入Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero区域 -->
+    <section class="relative h-96 flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="2.jpg" alt="遊戲特色" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-b from-dark/70 to-dark/90"></div>
+        </div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">遊戲特色</h1>
+            <p class="text-xl md:text-2xl mb-6 max-w-2xl mx-auto">探索像素精靈PokeHunt的獨特魅力</p>
+        </div>
+    </section>
+
+    <!-- 游戏特色内容 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-primary">創新戰鬥系統</h2>
+                    <p class="text-gray-700 mb-4">像素精靈PokeHunt採用獨特的即時戰鬥系統，結合了回合制和動作遊戲的優點，讓戰鬥更加刺激和策略性。</p>
+                    <p class="text-gray-700 mb-6">玩家可以自由組合技能，根據敵人的弱點制定戰鬥策略，體驗不一樣的戰鬥樂趣。</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>即時戰鬥與回合制相結合</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>多種技能組合</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>敵人弱點分析</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-hover rounded-2xl overflow-hidden shadow-lg">
+                    <img src="3.jpg" alt="創新戰鬥系統" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+                <div class="card-hover rounded-2xl overflow-hidden shadow-lg md:order-2">
+                    <img src="4.jpg" alt="精美像素畫風" class="w-full h-full object-cover">
+                </div>
+                <div class="md:order-1">
+                    <h2 class="text-3xl font-bold mb-6 text-primary">精美像素畫風</h2>
+                    <p class="text-gray-700 mb-4">精心設計的像素美術風格，帶你回到經典遊戲的懷舊時光，同時融合現代遊戲的視覺效果。</p>
+                    <p class="text-gray-700 mb-6">遊戲中的角色、場景和特效都經過精心設計，呈現出獨特的視覺體驗。</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>經典像素風格</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>現代視覺效果</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>精心設計的角色和場景</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-primary">龐大遊戲世界</h2>
+                    <p class="text-gray-700 mb-4">像素精靈PokeHunt擁有龐大的遊戲世界，包含多個不同的區域和地圖，等待玩家探索。</p>
+                    <p class="text-gray-700 mb-6">從茂密的森林到險峻的山脈，從神秘的洞穴到繁華的城市，每個地區都有獨特的風景和挑戰。</p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>多個不同的地區</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>隱藏的祕密和寶藏</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-secondary mr-2"></i>
+                            <span>豐富的探索內容</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-hover rounded-2xl overflow-hidden shadow-lg">
+                    <img src="5.jpg" alt="龐大遊戲世界" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">社交互動</h3>
+                    <p class="text-gray-600">與好友一起冒險，組隊挑戰強大的敵人，共同成長。遊戲內建聊天系統和好友功能，方便玩家交流。</p>
+                </div>
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fa fa-trophy"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">豐富的獎勵系統</h3>
+                    <p class="text-gray-600">完成任務、挑戰副本地圖、參加活動都能獲得豐富的獎勵，包括裝備、道具和遊戲貨幣。</p>
+                </div>
+                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fa fa-cogs"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">角色培養</h3>
+                    <p class="text-gray-600">多種職業和技能樹供玩家選擇，根據自己的喜好培養獨特的角色，打造專屬於你的遊戲體驗。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">像素精靈PokeHunt</h3>
+                    <p class="text-gray-400">探索充滿驚奇的像素世界，體驗獨特的冒險之旅。</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">快速鏈接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">首頁</a></li>
+                        <li><a href="features.html" class="text-gray-400 hover:text-white">遊戲特色</a></li>
+                        <li><a href="guides.html" class="text-gray-400 hover:text-white">遊戲攻略</a></li>
+                        <li><a href="codes.html" class="text-gray-400 hover:text-white">兌換碼</a></li>
+                        <li><a href="articles.html" class="text-gray-400 hover:text-white">文章專區</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">聯絡我們</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-weixin mr-2"></i>
+                            <span>小茂愛手游</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-qq mr-2"></i>
+                            <span>QQ群：1054734634</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-discord mr-2"></i>
+                            <a href="https://discord.gg/Pvkxz96V" class="hover:underline">Discord社區</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">加入QQ群</h3>
+                    <img src="https://dh.nnii.cn/qqqun.jpg" alt="QQ群二維碼" class="w-32 h-32">
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2026 像素精靈PokeHunt 官方網站. 保留所有權利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

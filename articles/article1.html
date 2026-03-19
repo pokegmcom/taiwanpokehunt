@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>遊戲最新版本更新公告 - 像素精靈PokeHunt</title>
+    <meta name="description" content="像素精靈PokeHunt最新版本更新公告，包含全新職業、地圖和遊戲平衡調整等內容。">
+    <meta name="keywords" content="像素精靈PokeHunt, 像素精靈, 版本更新, 全新職業, 新地圖, 遊戲平衡">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7B68EE',
+                        secondary: '#4CAF50',
+                        accent: '#FFD700',
+                        dark: '#2D2D2D',
+                        light: '#F8F9FA'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="../logo.png" alt="像素精靈PokeHunt" class="h-10">
+                <h1 class="ml-3 text-xl font-bold text-primary">像素精靈PokeHunt</h1>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="../index.html" class="font-medium hover:text-primary">首頁</a>
+                <a href="../features.html" class="font-medium hover:text-primary">遊戲特色</a>
+                <a href="../guides.html" class="font-medium hover:text-primary">遊戲攻略</a>
+                <a href="../codes.html" class="font-medium hover:text-primary">兌換碼</a>
+                <a href="../articles.html" class="font-medium text-primary">文章專區</a>
+                <a href="https://discord.gg/Pvkxz96V" class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30">加入Discord</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-dark focus:outline-none">
+                    <i class="fa fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- 移动端菜单 -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="../index.html" class="font-medium hover:text-primary">首頁</a>
+                <a href="../features.html" class="font-medium hover:text-primary">遊戲特色</a>
+                <a href="../guides.html" class="font-medium hover:text-primary">遊戲攻略</a>
+                <a href="../codes.html" class="font-medium hover:text-primary">兌換碼</a>
+                <a href="../articles.html" class="font-medium text-primary">文章專區</a>
+                <a href="https://discord.gg/Pvkxz96V" class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30 text-center">加入Discord</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 文章内容 -->
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-8">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium">更新公告</span>
+                        <span class="text-gray-500 text-sm ml-auto">2026-03-15</span>
+                    </div>
+                    <h1 class="text-3xl font-bold mb-4">遊戲最新版本更新公告</h1>
+                    <div class="flex items-center text-gray-600 mb-8">
+                        <i class="fa fa-user mr-2"></i>
+                        <span>官方團隊</span>
+                        <span class="mx-3">|</span>
+                        <i class="fa fa-eye mr-2"></i>
+                        <span>1,234 閱讀</span>
+                    </div>
+                    <img src="../2.jpg" alt="遊戲更新" class="w-full h-64 object-cover rounded-2xl mb-8">
+                </div>
+                <div class="prose prose-lg max-w-none">
+                    <p>親愛的玩家們：</p>
+                    <p class="my-4">感謝大家一直以來對《像素精靈PokeHunt》的支持與喜愛！我們非常興奮地宣布，遊戲最新版本將於2026年3月16日正式上線，本次更新帶來了眾多全新內容和遊戲優化，讓您的冒險體驗更加豐富多彩。</p>
+                    <h2 class="text-2xl font-bold mt-8 mb-4">全新職業 - 刺客</h2>
+                    <p>本次更新將推出全新職業「刺客」，擁有高爆擊率和敏捷的戰鬥風格，擅長近戰偷襲和快速擊殺敵人。刺客職業擁有獨特的技能樹和遊戲機制，為玩家提供全新的遊戲體驗。</p>
+                    <h2 class="text-2xl font-bold mt-8 mb-4">新地圖 - 迷失森林</h2>
+                    <p>新增「迷失森林」地圖，這是一個充滿神秘和危險的區域，隱藏著豐富的寶藏和強大的敵人。玩家需要解開森林中的謎題，探索隱藏的祕密，挑戰強大的BOSS。</p>
+                    <h2 class="text-2xl font-bold mt-8 mb-4">遊戲平衡調整</h2>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>調整了各職業的技能傷害和冷卻時間，使遊戲更加平衡</li>
+                        <li>優化了副本地圖的難度和掉落機制</li>
+                        <li>增加了新的日常任務和活動</li>
+                        <li>優化了遊戲的操作體驗和畫面效果</li>
+                    </ul>
+                    <h2 class="text-2xl font-bold mt-8 mb-4">其他優化</h2>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>修復了遊戲中的一些BUG</li>
+                        <li>優化了遊戲的載入速度</li>
+                        <li>增加了新的時裝和寵物</li>
+                        <li>改進了遊戲的社交系統</li>
+                    </ul>
+                    <p class="my-4">為了慶祝本次更新，我們將在更新後推出一系列活動，參與活動可獲得豐富的獎勵，包括限定時裝、稀有寵物和大量遊戲貨幣。</p>
+                    <p class="my-4">感謝大家的支持與理解，我們將繼續努力為大家帶來更好的遊戲體驗！</p>
+                    <p class="mt-8 font-semibold">《像素精靈PokeHunt》官方團隊</p>
+                    <p>2026年3月15日</p>
+                </div>
+                <!-- 分享按钮 -->
+                <div class="mt-12 flex justify-between items-center">
+                    <div class="flex space-x-4">
+                        <button class="btn-hover bg-white text-dark px-4 py-2 rounded-lg border border-gray-300 flex items-center">
+                            <i class="fa fa-share-alt mr-2"></i>
+                            <span>分享</span>
+                        </button>
+                        <button class="btn-hover bg-white text-dark px-4 py-2 rounded-lg border border-gray-300 flex items-center">
+                            <i class="fa fa-thumbs-up mr-2"></i>
+                            <span>點讚</span>
+                        </button>
+                    </div>
+                    <div>
+                        <a href="../articles.html" class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30">返回列表</a>
+                    </div>
+                </div>
+                <!-- 相关文章 -->
+                <div class="mt-16">
+                    <h3 class="text-xl font-bold mb-6">相關文章</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
+                            <img src="../3.jpg" alt="新手入門指南" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h4 class="font-semibold mb-2">新手入門指南</h4>
+                                <p class="text-gray-600 text-sm mb-2">2026-03-10</p>
+                                <a href="article1.html" class="text-primary text-sm hover:underline">閱讀更多</a>
+                            </div>
+                        </div>
+                        <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
+                            <img src="../4.jpg" alt="春季活動即將開啟" class="w-full h-32 object-cover">
+                            <div class="p-4">
+                                <h4 class="font-semibold mb-2">春季活動即將開啟</h4>
+                                <p class="text-gray-600 text-sm mb-2">2026-03-05</p>
+                                <a href="article1.html" class="text-primary text-sm hover:underline">閱讀更多</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">像素精靈PokeHunt</h3>
+                    <p class="text-gray-400">探索充滿驚奇的像素世界，體驗獨特的冒險之旅。</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">快速鏈接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="../index.html" class="text-gray-400 hover:text-white">首頁</a></li>
+                        <li><a href="../features.html" class="text-gray-400 hover:text-white">遊戲特色</a></li>
+                        <li><a href="../guides.html" class="text-gray-400 hover:text-white">遊戲攻略</a></li>
+                        <li><a href="../codes.html" class="text-gray-400 hover:text-white">兌換碼</a></li>
+                        <li><a href="../articles.html" class="text-gray-400 hover:text-white">文章專區</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">聯絡我們</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fa fa-weixin mr-2"></i>
+                            <span>小茂愛手游</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-qq mr-2"></i>
+                            <span>QQ群：1054734634</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-discord mr-2"></i>
+                            <a href="https://discord.gg/Pvkxz96V" class="hover:underline">Discord社區</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">加入QQ群</h3>
+                    <img src="https://dh.nnii.cn/qqqun.jpg" alt="QQ群二維碼" class="w-32 h-32">
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2026 像素精靈PokeHunt 官方網站. 保留所有權利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // 移动端菜单切换
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
