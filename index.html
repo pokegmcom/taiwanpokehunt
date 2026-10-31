@@ -1,224 +1,219 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>像素精靈PokeHunt - 官方網站 | 像素風格冒險遊戲</title>
-    <meta name="description" content="像素精靈PokeHunt是一款全新的像素風格冒險遊戲，擁有創新的戰鬥系統、精美的像素畫風和龐大的遊戲世界，讓您體驗獨特的遊戲玩法和精彩的故事劇情。">
-    <meta name="keywords" content="像素精靈PokeHunt, 像素精靈, 像素風格遊戲, 冒險遊戲, 角色扮演遊戲, RPG, 像素遊戲, 遊戲下載, 遊戲攻略, 兌換碼">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#7B68EE',
-                        secondary: '#4CAF50',
-                        accent: '#FFD700',
-                        dark: '#2D2D2D',
-                        light: '#F8F9FA'
-                    }
-                }
-            }
-        }
+    <title>pokebonk 下載 - 寶可夢倖存者網頁版，免註冊直接玩</title>
+    <meta name="description" content="pokebonk（寶可夢bonk）是一款寶可夢題材的倖存者割草 Roguelike 網頁遊戲，收錄關都地區 151 隻寶可夢，免註冊一鍵開玩，手機瀏覽器也能玩。選御三家、割草升級、夜晚捕捉異色寶可夢，挑戰各區域守護者 BOSS。">
+    <meta name="keywords" content="pokebonk,pokebonk下載,pokebonk 禮包碼,寶可夢倖存者,寶可夢割草,倖存者遊戲,寶可夢roguelike,關都151,異色寶可夢">
+    <meta name="author" content="pokebonk">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://taiwan.pokegm.com/">
+    <meta property="og:title" content="pokebonk 下載 - 寶可夢倖存者網頁版，免註冊直接玩">
+    <meta property="og:description" content="pokebonk（寶可夢bonk）是一款寶可夢題材的倖存者割草 Roguelike 網頁遊戲，收錄關都地區 151 隻寶可夢，免註冊一鍵開玩，手機瀏覽器也能玩。選御三家、割草升級、夜晚捕捉異色寶可夢，挑戰各區域守護者 BOSS。">
+    <meta property="og:image" content="https://taiwan.pokegm.com/og.jpg">
+    <meta property="og:url" content="https://taiwan.pokegm.com/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/font-awesome/font-awesome.min.css?v=20261031h">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "pokebonk",
+  "alternateName": [
+    "Pokemon Bonk"
+  ],
+  "url": "https://taiwan.pokegm.com",
+  "inLanguage": "zh-Hant",
+  "description": "pokebonk 是寶可夢題材的倖存者割草 Roguelike 網頁遊戲，收錄關都地區 151 隻寶可夢，免註冊、免安裝，瀏覽器直接開玩。",
+  "genre": [
+    "Roguelike",
+    "Survivors",
+    "Action"
+  ],
+  "gamePlatform": [
+    "Web Browser",
+    "Android",
+    "iOS"
+  ],
+  "applicationCategory": "Game",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
     </script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .btn-hover {
-            transition: all 0.3s ease;
-        }
-        .btn-hover:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-    </style>
-</head>
-<body class="bg-light text-dark">
-    <!-- 导航栏 -->
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md shadow-md">
+
+    <link rel="stylesheet" href="tailwind.css?v=20261031h">
+    <link rel="stylesheet" href="styles.css?v=20261031h">
+</head><body class="bg-light text-dark">
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-md">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="logo.png" alt="像素精靈PokeHunt" class="h-10">
-                <h1 class="ml-3 text-xl font-bold text-primary">像素精靈PokeHunt</h1>
-            </div>
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="index.html" class="font-medium text-primary">首頁</a>
-                <a href="features.html" class="font-medium hover:text-primary">遊戲特色</a>
-                <a href="guides.html" class="font-medium hover:text-primary">遊戲攻略</a>
-                <a href="codes.html" class="font-medium hover:text-primary">兌換碼</a>
-                <a href="articles.html" class="font-medium hover:text-primary">文章專區</a>
-                <a href="https://hk.qu06.cn/gtpcsc/?SILDAiSN" class="btn-hover bg-accent text-dark px-4 py-2 rounded-lg border border-accent/30">立即下載</a>
-                <a href="https://discord.gg/Pvkxz96V" class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30">加入Discord</a>
-            </div>
-            <div class="md:hidden">
-                <button id="menu-toggle" class="text-dark focus:outline-none">
-                    <i class="fa fa-bars text-2xl"></i>
-                </button>
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="logo.png" alt="pokebonk logo" class="h-10 w-auto" width="480" height="120">
+            </a>
+            <ul class="hidden md:flex items-center gap-5">
+                <li><a href="index.html" class="font-medium hover:text-primary transition-colors text-primary">首頁</a></li>
+                <li><a href="features.html" class="font-medium hover:text-primary transition-colors">遊戲特色</a></li>
+                <li><a href="guide.html" class="font-medium hover:text-primary transition-colors">新手攻略</a></li>
+                <li><a href="codes.html" class="font-medium hover:text-primary transition-colors">兌換碼</a></li>
+                <li><a href="articles.html" class="font-medium hover:text-primary transition-colors">最新消息</a></li>
+                <li><a href="https://hk.qu06.cn/gtpcsc/?SILDAiSN" class="bg-primary text-white px-4 py-2 rounded-full font-medium btn-hover">立即開玩</a></li>
+            </ul>
+            <div class="flex items-center gap-3">
+                <button onclick="toggleMobileMenu()" class="md:hidden text-2xl text-primary"><i class="fa fa-bars"></i></button>
             </div>
         </div>
-        <!-- 移动端菜单 -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
-                <a href="index.html" class="font-medium text-primary">首頁</a>
-                <a href="features.html" class="font-medium hover:text-primary">遊戲特色</a>
-                <a href="guides.html" class="font-medium hover:text-primary">遊戲攻略</a>
-                <a href="codes.html" class="font-medium hover:text-primary">兌換碼</a>
-                <a href="articles.html" class="font-medium hover:text-primary">文章專區</a>
-                <a href="https://hk.qu06.cn/gtpcsc/?SILDAiSN" class="btn-hover bg-accent text-dark px-4 py-2 rounded-lg border border-accent/30 text-center">立即下載</a>
-                <a href="https://discord.gg/Pvkxz96V" class="btn-hover bg-primary text-white px-4 py-2 rounded-lg border border-primary/30 text-center">加入Discord</a>
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-100">
+            <div class="container mx-auto px-4 py-3 flex flex-col gap-3">
+                <a href="index.html" class="font-medium py-1">首頁</a><a href="features.html" class="font-medium py-1">遊戲特色</a><a href="guide.html" class="font-medium py-1">新手攻略</a><a href="codes.html" class="font-medium py-1">兌換碼</a><a href="articles.html" class="font-medium py-1">最新消息</a>
+                <a href="https://hk.qu06.cn/gtpcsc/?SILDAiSN" class="bg-primary text-white px-4 py-2 rounded-full font-medium text-center">立即開玩</a>
             </div>
         </div>
     </nav>
-
-    <!-- Hero区域 -->
-    <section class="relative min-h-[600px] md:min-h-[700px] lg:min-h-[800px] flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="1.jpg" alt="像素精靈PokeHunt" class="w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-b from-dark/70 to-dark/90"></div>
-        </div>
-        <div class="relative z-10 text-center text-white px-4">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">像素精靈PokeHunt</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">探索充滿驚奇的像素世界，體驗獨特的冒險之旅</p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="https://hk.qu06.cn/gtpcsc/?SILDAiSN" class="btn-hover bg-accent text-dark px-6 py-3 rounded-lg border border-accent/30">立即下載</a>
-                <a href="features.html" class="btn-hover bg-primary text-white px-6 py-3 rounded-lg border border-primary/30">了解遊戲特色</a>
-                <a href="codes.html" class="btn-hover bg-white text-primary px-6 py-3 rounded-lg border border-white/30">領取兌換碼</a>
+    <header class="bg-gradient-to-br from-primary via-purple-600 to-indigo-800 text-white py-20 md:py-24">
+        <div class="container mx-auto px-4 text-center">
+            <span class="inline-block bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-medium mb-6">同人作品 - 免費 - 網頁版</span>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-shadow">pokebonk</h1>
+            <p class="text-xl md:text-2xl mb-4 opacity-95">寶可夢 × 倖存者，瀏覽器直接開玩。</p>
+            <p class="text-lg mb-10 opacity-80 max-w-2xl mx-auto">從關都地區 151 隻寶可夢中挑一隻御三家，抵禦無止盡的怪潮、解鎖 Roguelike 強化，夜晚還能捕捉異色寶可夢。</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://hk.qu06.cn/gtpcsc/?SILDAiSN" class="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg btn-hover">立即免費開玩</a>
+                <a href="guide.html" class="bg-white/20 backdrop-blur-sm border border-white/40 px-8 py-4 rounded-full font-bold text-lg btn-hover">怎麼玩</a>
             </div>
+            <div class="grid grid-cols-3 gap-4 max-w-2xl mx-auto mt-14"><div><div class="text-3xl md:text-4xl font-bold text-accent">151</div><div class="text-sm opacity-80">關都寶可夢</div></div><div><div class="text-3xl md:text-4xl font-bold text-accent">18.1萬+</div><div class="text-sm opacity-80">註冊玩家</div></div><div><div class="text-3xl md:text-4xl font-bold text-accent">2×3</div><div class="text-sm opacity-80">地圖×區域</div></div></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="text-3xl font-bold mb-6 text-center">pokebonk 是什麼？</h2>
+                <p class="text-gray-600 text-lg leading-relaxed mb-4">pokebonk 是一款同人製作的寶可夢遊戲，把寶可夢的世界觀和《吸血鬼倖存者》《Megabonk》帶紅的倖存者割草玩法結合在一起。你選一隻關都御三家，被丟進一個隨機生成的區域，面對從四面八方湧上來的野生寶可夢。</p><p class="text-gray-600 text-lg leading-relaxed mb-4">大部分技能會自動施放，玩家只需要控制移動和跳躍，所以在手機上隨時開一局很輕鬆，但要鑽研到後期也有足夠深度。每次升級都會三選一強化，地圖上還散布著精靈球、祭壇、聖地、礦石和樹果，能給你額外技能、增益、金幣或回血。</p><p class="text-gray-600 text-lg leading-relaxed mb-4">全程在瀏覽器裡跑：不用下載客戶端、不用註冊帳號、不用安裝。點一下開始，選好御三家，幾秒內就能進入一局。</p>
+            </div>
+        </section>
+
+        <section class="py-16 bg-light">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center">為什麼好玩</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-2xl p-6 shadow-md card-hover">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4"><i class="fa fa-bolt text-primary text-xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">倖存者割草戰鬥</h3>
+                        <p class="text-gray-600 text-sm">技能自動施放、升級三選一，一局接一局的「再玩一把」節奏。</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-md card-hover">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4"><i class="fa fa-th text-primary text-xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">151 隻關都寶可夢</h3>
+                        <p class="text-gray-600 text-sm">第一世代全部收錄，數值和招式都依照原作設計。</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-md card-hover">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4"><i class="fa fa-star text-primary text-xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">異色狩獵</h3>
+                        <p class="text-gray-600 text-sm">夜晚會刷新稀有異色寶可夢，捉到就永久擁有。</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-6 shadow-md card-hover">
+                        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4"><i class="fa fa-gamepad text-primary text-xl"></i></div>
+                        <h3 class="text-xl font-bold mb-2">隨時隨地開玩</h3>
+                        <p class="text-gray-600 text-sm">電腦或手機瀏覽器都行，不用下載，適合零碎時間。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold mb-12 text-center">遊戲畫面</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <figure class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                        <img src="art-survivors.webp" alt="pokebonk survivors combat" class="w-full h-56 object-cover" width="1200" height="750" loading="lazy" decoding="async">
+                        <figcaption class="p-4"><h3 class="font-bold mb-1">Run and gun</h3></figcaption>
+                    </figure>
+                    <figure class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                        <img src="art-kanto.webp" alt="pokebonk 151 Pokemon" class="w-full h-56 object-cover" width="1200" height="750" loading="lazy" decoding="async">
+                        <figcaption class="p-4"><h3 class="font-bold mb-1">Full Kanto dex</h3></figcaption>
+                    </figure>
+                    <figure class="rounded-2xl overflow-hidden shadow-lg card-hover">
+                        <img src="art-shiny.webp" alt="pokebonk shiny hunting" class="w-full h-56 object-cover" width="1200" height="750" loading="lazy" decoding="async">
+                        <figcaption class="p-4"><h3 class="font-bold mb-1">Shiny nights</h3></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-light">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between mb-8">
+                    <h2 class="text-3xl font-bold">最新消息</h2>
+                    <a href="articles.html" class="text-primary font-medium hover:underline">全部文章 <i class="fa fa-arrow-right ml-1"></i></a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <article class="bg-white rounded-2xl p-6 shadow-md card-hover">
+                        <div class="text-sm text-primary font-medium mb-2">首發</div>
+                        <h3 class="text-lg font-bold mb-2">pokebonk 爆紅：兩週 18.1 萬玩家</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3">這款同人寶可夢倖存者遊戲測試上線幾天就爆紅，伺服器一度被擠爆。</p>
+                        <a href="articles/article1.html" class="text-primary font-medium hover:underline inline-flex items-center mt-4">閱讀全文 <i class="fa fa-arrow-right ml-1 text-xs"></i></a>
+                    </article>
+                    <article class="bg-white rounded-2xl p-6 shadow-md card-hover">
+                        <div class="text-sm text-primary font-medium mb-2">攻略</div>
+                        <h3 class="text-lg font-bold mb-2">御三家梯度：該選哪一隻？</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3">小火龍、傑尼龜還是妙蛙種子？前期清怪速度、生存力與後期成長比較。</p>
+                        <a href="articles/article2.html" class="text-primary font-medium hover:underline inline-flex items-center mt-4">閱讀全文 <i class="fa fa-arrow-right ml-1 text-xs"></i></a>
+                    </article>
+                    <article class="bg-white rounded-2xl p-6 shadow-md card-hover">
+                        <div class="text-sm text-primary font-medium mb-2">攻略</div>
+                        <h3 class="text-lg font-bold mb-2">夜晚怎麼抓異色寶可夢</h3>
+                        <p class="text-gray-600 text-sm line-clamp-3">異色只在夜間刷新，時間窗口有限，這裡教你怎麼提高成功率。</p>
+                        <a href="articles/article3.html" class="text-primary font-medium hover:underline inline-flex items-center mt-4">閱讀全文 <i class="fa fa-arrow-right ml-1 text-xs"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4 max-w-3xl">
+                <h2 class="text-3xl font-bold mb-8 text-center">常見問題</h2>
+                <div class="space-y-4">
+                    <div class="bg-light rounded-xl p-5"><h3 class="font-bold mb-2">pokebonk 要收費嗎？</h3><p class="text-gray-600 text-sm">不用。pokebonk 是免費的同人作品，直接在瀏覽器玩，不需要註冊也不需要付費。</p></div><div class="bg-light rounded-xl p-5"><h3 class="font-bold mb-2">手機可以玩 pokebonk 嗎？</h3><p class="text-gray-600 text-sm">可以，手機瀏覽器就能跑。電腦螢幕較大，但手機觸控操作玩一局也很順。</p></div><div class="bg-light rounded-xl p-5"><h3 class="font-bold mb-2">禮包碼怎麼兌換？</h3><p class="text-gray-600 text-sm">角色達到 Lv.15 後，點擊右上角「福利」→「禮包碼兌換」輸入即可。所有有效禮包碼都整理在兌換碼頁面。</p></div><div class="bg-light rounded-xl p-5"><h3 class="font-bold mb-2">這是官方寶可夢遊戲嗎？</h3><p class="text-gray-600 text-sm">不是。pokebonk 是同人作品，與任天堂、Game Freak、The Pokémon Company 沒有任何隸屬關係。</p></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">準備好開割了嗎？</h2>
+            <p class="text-lg mb-8 opacity-90 max-w-2xl mx-auto">瀏覽器免安裝直接玩，選好御三家就能開始，不用下載也不用註冊。</p>
+            <a href="https://hk.qu06.cn/gtpcsc/?SILDAiSN" class="inline-block bg-white text-primary px-8 py-4 rounded-full font-bold text-lg btn-hover">立即開玩 pokebonk</a>
         </div>
     </section>
-
-    <!-- 内容区域 -->
-    <section class="py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12">遊戲亮點</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fa fa-gamepad"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">獨特遊戲玩法</h3>
-                    <p class="text-gray-600">創新的戰鬥系統和探索機制，讓你體驗不一樣的遊戲樂趣。</p>
-                </div>
-                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fa fa-paint-brush"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">精美像素畫風</h3>
-                    <p class="text-gray-600">精心設計的像素美術風格，帶你回到經典遊戲的懷舊時光。</p>
-                </div>
-                <div class="card-hover bg-white rounded-2xl p-6 shadow-md">
-                    <div class="text-primary text-4xl mb-4">
-                        <i class="fa fa-users"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">社交互動</h3>
-                    <p class="text-gray-600">與好友一起冒險，組隊挑戰強大的敵人，共同成長。</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 最新文章 -->
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center mb-8">
-                <h2 class="text-3xl font-bold">最新文章</h2>
-                <a href="articles.html" class="text-primary hover:underline">查看全部</a>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
-                    <img src="2.jpg" alt="遊戲更新" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">遊戲最新版本更新公告</h3>
-                        <p class="text-gray-600 mb-4">2026-03-15</p>
-                        <p class="text-gray-700 mb-4">本次更新帶來了全新的職業和地圖，以及多項遊戲平衡調整。</p>
-                        <a href="articles/article1.html" class="text-primary hover:underline">閱讀更多</a>
-                    </div>
-                </div>
-                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
-                    <img src="3.jpg" alt="遊戲攻略" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">新手入門指南</h3>
-                        <p class="text-gray-600 mb-4">2026-03-10</p>
-                        <p class="text-gray-700 mb-4">為新手玩家提供全面的遊戲入門指導，幫助你快速上手。</p>
-                        <a href="articles/article1.html" class="text-primary hover:underline">閱讀更多</a>
-                    </div>
-                </div>
-                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-md">
-                    <img src="4.jpg" alt="活動公告" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">春季活動即將開啟</h3>
-                        <p class="text-gray-600 mb-4">2026-03-05</p>
-                        <p class="text-gray-700 mb-4">春季限定活動即將開始，參與活動獲取豐富獎勵。</p>
-                        <a href="articles/article1.html" class="text-primary hover:underline">閱讀更多</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 页脚 -->
     <footer class="bg-dark text-white py-12">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <h3 class="text-xl font-semibold mb-4">像素精靈PokeHunt</h3>
-                    <p class="text-gray-400">探索充滿驚奇的像素世界，體驗獨特的冒險之旅。</p>
+                    <img src="logo.png" alt="pokebonk logo" class="h-10 w-auto bg-white/10 rounded-lg p-1 mb-4" width="480" height="120">
+                    <p class="text-gray-400 text-sm">pokebonk - 免費網頁倖存者遊戲</p>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">快速鏈接</h3>
+                    <h4 class="font-bold mb-4">網站頁面</h4>
                     <ul class="space-y-2">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white">首頁</a></li>
-                        <li><a href="features.html" class="text-gray-400 hover:text-white">遊戲特色</a></li>
-                        <li><a href="guides.html" class="text-gray-400 hover:text-white">遊戲攻略</a></li>
-                        <li><a href="codes.html" class="text-gray-400 hover:text-white">兌換碼</a></li>
-                        <li><a href="articles.html" class="text-gray-400 hover:text-white">文章專區</a></li>
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">首頁</a></li><li><a href="features.html" class="text-gray-400 hover:text-white transition-colors">遊戲特色</a></li><li><a href="guide.html" class="text-gray-400 hover:text-white transition-colors">新手攻略</a></li><li><a href="codes.html" class="text-gray-400 hover:text-white transition-colors">兌換碼</a></li><li><a href="articles.html" class="text-gray-400 hover:text-white transition-colors">最新消息</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-lg font-semibold mb-4">聯絡我們</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center">
-                            <i class="fa fa-weixin mr-2"></i>
-                            <span>小茂愛手游</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fa fa-qq mr-2"></i>
-                            <span>QQ群：1054734634</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fa fa-discord mr-2"></i>
-                            <a href="https://discord.gg/Pvkxz96V" class="hover:underline">Discord社區</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">加入QQ群</h3>
-                    <img src="https://dh.nnii.cn/qqqun.jpg" alt="QQ群二維碼" class="w-32 h-32">
+                    <h4 class="font-bold mb-4">社群</h4>
+                    <a href="https://discord.gg/Pvkxz96V" class="inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors"><i class="fa fa-comments"></i> 加入我們的 Discord</a>
+                    <p class="text-gray-500 text-xs mt-6 leading-relaxed">pokebonk 是免費的同人作品。寶可夢及相關名稱的商標權屬於任天堂、Game Freak 與 The Pokémon Company，本站與其無任何隸屬或授權關係。</p>
                 </div>
             </div>
-            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-                <p>© 2026 像素精靈PokeHunt 官方網站. 保留所有權利.</p>
-            </div>
+            <div class="border-t border-white/10 mt-8 pt-6 text-center text-gray-500 text-sm">pokebonk - 同人粉絲站</div>
         </div>
     </footer>
-
     <script>
-        // 移动端菜单切换
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            const mobileMenu = document.getElementById('mobile-menu');
-            mobileMenu.classList.toggle('hidden');
-        });
+        function toggleMobileMenu() { document.getElementById('mobileMenu').classList.toggle('hidden'); }
     </script>
 </body>
 </html>

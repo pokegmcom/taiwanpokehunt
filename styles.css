@@ -1,11 +1,11 @@
-/* 기본 스타�?초기�?*/
+/* 기본 스타일 초기화 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 색상 변�?정의 */
+/* 색상 변수 정의 */
 :root {
     --primary-color: #3b82f6;
     --primary-dark: #2563eb;
@@ -32,7 +32,7 @@ body {
     padding: 0 20px;
 }
 
-/* 네비게이�?�?스타�?*/
+/* 네비게이션 바 스타일 */
 .navbar {
     background-color: var(--white-color);
     box-shadow: var(--shadow);
@@ -162,7 +162,7 @@ body {
     transition: all 0.3s ease;
 }
 
-/* 영웅 영역 (슬라이드�? */
+/* 영웅 영역 (슬라이드쇼) */
 .hero {
     margin-top: 70px;
     position: relative;
@@ -219,7 +219,7 @@ body {
     margin-bottom: 2rem;
 }
 
-/* 버튼 스타�?*/
+/* 버튼 스타일 */
 .btn {
     display: inline-block;
     padding: 0.75rem 2rem;
@@ -288,7 +288,7 @@ body {
     background-color: var(--primary-color);
 }
 
-/* 페이�?�?애니메이�?*/
+/* 페이드 애니메이션 */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -358,7 +358,7 @@ body {
     font-size: 0.95rem;
 }
 
-/* 게임 특색 이미지 슬라이드�?*/
+/* 게임 특색 이미지 슬라이드쇼 */
 .about-slider {
     margin-top: 4rem;
     position: relative;
@@ -400,7 +400,7 @@ body {
     transform: scale(1.02);
 }
 
-/* 슬라이드 제어 버튼 -扁平化设�?*/
+/* 슬라이드 제어 버튼 -扁平化设计 */
 .slider-prev, .slider-next {
     cursor: pointer;
     position: absolute;
@@ -428,7 +428,7 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* 인디케이터 -扁平化设�?*/
+/* 인디케이터 -扁平化设计 */
 .slider-dots {
     text-align: center;
     padding: 20px;
@@ -697,7 +697,7 @@ body {
     box-shadow: var(--shadow-lg);
 }
 
-/* 푸터 스타�?*/
+/* 푸터 스타일 */
 .footer {
     background-color: var(--dark-color);
     color: var(--white-color);
@@ -791,7 +791,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* 반응�?디자�?*/
+/* 반응형 디자인 */
 @media (max-width: 1024px) {
     .about-content,
     .guide-content {
@@ -842,7 +842,7 @@ body {
         font-size: 2rem;
     }
     
-    .about,    .gallery,    .guide,    .contact,    .article {        padding: 6rem 0;    }    
+    .about,    .gallery,    .guide,    .contact,    .article {        padding: 6rem 0;    }
     .article-content {
         padding: 2rem;
     }
@@ -864,7 +864,7 @@ body {
         gap: 1.5rem;
     }
     
-    /* 슬라이드 반응�?디자�?*/
+    /* 슬라이드 반응형 디자인 */
     .slider-container {
         max-height: 400px;
     }
@@ -889,7 +889,7 @@ body {
         font-size: 1.2rem;
     }
     
-    /* 작은 화면에서�?슬라이드 반응�?디자�?*/
+    /* 작은 화면에서의 슬라이드 반응형 디자인 */
     .slider-container {
         max-height: 300px;
     }
@@ -948,6 +948,3 @@ body {
         padding: 0.8rem 1.5rem;
     }
 }
-
-
-
